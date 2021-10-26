@@ -16,13 +16,13 @@ class FlightArrivalTimeCalculatorTestCase(unittest.TestCase):
         for test_data in inputs:
             data, expected = test_data.values()
 
-            print("Testing")
-            print("Entrada:", *data)
-            print("Salida esperada:", *expected)
+            print("Testing output")
+            print("Input:", *data)
+            print("Expected:", *expected)
 
             result = main(*data)
 
-            print("Salida obtenida:", *result)
+            print("Got:", *result)
             print()
 
             self.assertListEqual(result, expected)
